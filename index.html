@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Carte du Logis – Enclave du Vent d'Or</title>
+  <title>Carte du Logis – Quartier des étoiles (Horde)</title>
 
   <style>
-.tooltip-label {
-  color: #caa500;
-  font-weight: bold;
-}
+    .tooltip-label {
+      color: #caa500;
+      font-weight: bold;
+    }
 
     body {
       margin: 0;
@@ -477,129 +477,119 @@
       font-style: italic;
       font-size: 11px;
     }
-
-    /* Petit style pour l’onglet Côté RP */
-    #rec-rp-list .rp-name {
-      font-weight: bold;
-      color: #ffd100;
-    }
-    #rec-rp-list .rp-desc {
-      font-style: italic;
-      color: #dddddd;
-    }
   </style>
 </head>
 
 <body>
 
-  <button class="admin-btn" id="open-recensement">📜 Recensement de l'enclave du Vent d'Or</button>
+  <button class="admin-btn" id="open-recensement">📜 Recensement du quartier des étoiles</button>
 
   <div class="map-container">
     <div class="map-inner">
-      <img src="Map Logis Alliance VIERGE.png" alt="Carte du Logis">
+      <img src="Map Logis Horde VIERGE.png" alt="Carte du Logis Horde">
 
-      <!-- PARCELLES 0 à 54 -->
-      <div class="plot" id="plot0"  style="left: 58.7%; top: 49.5%;">0</div>
-      <div class="plot" id="plot1"  style="left: 42.5%; top: 57.1%;">1</div>
-      <div class="plot" id="plot2"  style="left: 51.3%; top: 61.3%;">2</div>
-      <div class="plot" id="plot3"  style="left: 58.4%; top: 43.8%;">3</div>
-      <div class="plot" id="plot4"  style="left: 29.2%; top: 35.2%;">4</div>
-      <div class="plot" id="plot5"  style="left: 35.9%; top: 59.1%;">5</div>
-      <div class="plot" id="plot6"  style="left: 62.3%; top: 57.3%;">6</div>
-      <div class="plot" id="plot7"  style="left: 50.1%; top: 33.2%;">7</div>
-      <div class="plot" id="plot8"  style="left: 53.9%; top: 67.5%;">8</div>
-      <div class="plot" id="plot9"  style="left: 47.9%; top: 34.5%;">9</div>
-      <div class="plot" id="plot10" style="left: 48.8%; top: 64.8%;">10</div>
-      <div class="plot" id="plot11" style="left: 52.8%; top: 51.6%;">11</div>
-      <div class="plot" id="plot12" style="left: 25.7%; top: 40.2%;">12</div>
-      <div class="plot" id="plot13" style="left: 37.6%; top: 53.6%;">13</div>
-      <div class="plot" id="plot14" style="left: 34.6%; top: 55.8%;">14</div>
-      <div class="plot" id="plot15" style="left: 51.4%; top: 55.5%;">15</div>
-      <div class="plot" id="plot16" style="left: 52.9%; top: 49.0%;">16</div>
-      <div class="plot" id="plot17" style="left: 61.0%; top: 49.8%;">17</div>
-      <div class="plot" id="plot18" style="left: 58.5%; top: 67.6%;">18</div>
-      <div class="plot" id="plot19" style="left: 33.4%; top: 39.8%;">19</div>
-      <div class="plot" id="plot20" style="left: 60.0%; top: 64.8%;">20</div>
-      <div class="plot" id="plot21" style="left: 66.3%; top: 59.5%;">21</div>
-      <div class="plot" id="plot22" style="left: 65.0%; top: 47.9%;">22</div>
-      <div class="plot" id="plot23" style="left: 65.7%; top: 39.6%;">23</div>
-      <div class="plot" id="plot24" style="left: 32.8%; top: 25.9%;">24</div>
-      <div class="plot" id="plot25" style="left: 26.6%; top: 36.8%;">25</div>
-      <div class="plot" id="plot26" style="left: 43.1%; top: 60.4%;">26</div>
-      <div class="plot" id="plot27" style="left: 49.9%; top: 30.4%;">27</div>
-      <div class="plot" id="plot28" style="left: 28.5%; top: 31.2%;">28</div>
-      <div class="plot" id="plot29" style="left: 32.4%; top: 34.4%;">29</div>
-      <div class="plot" id="plot30" style="left: 39.0%; top: 58.4%;">30</div>
-      <div class="plot" id="plot31" style="left: 61.8%; top: 39.8%;">31</div>
-      <div class="plot" id="plot32" style="left: 66.5%; top: 44.2%;">32</div>
-      <div class="plot" id="plot33" style="left: 55.8%; top: 62.7%;">33</div>
-      <div class="plot" id="plot34" style="left: 40.1%; top: 36.6%;">34</div>
-      <div class="plot" id="plot35" style="left: 36.7%; top: 63.7%;">35</div>
-      <div class="plot" id="plot36" style="left: 32.7%; top: 55.9%;">36</div>
-      <div class="plot" id="plot37" style="left: 44.8%; top: 63.4%;">37</div>
-      <div class="plot" id="plot38" style="left: 60.1%; top: 61.0%;">38</div>
-      <div class="plot" id="plot39" style="left: 41.8%; top: 33.0%;">39</div>
-      <div class="plot" id="plot40" style="left: 27.1%; top: 33.7%;">40</div>
-      <div class="plot" id="plot41" style="left: 61.0%; top: 72.4%;">41</div>
-      <div class="plot" id="plot42" style="left: 45.6%; top: 33.0%;">42</div>
-      <div class="plot" id="plot43" style="left: 32.4%; top: 30.5%;">43</div>
-      <div class="plot" id="plot44" style="left: 47.6%; top: 30.0%;">44</div>
-      <div class="plot" id="plot45" style="left: 42.2%; top: 37.2%;">45</div>
-      <div class="plot" id="plot46" style="left: 47.7%; top: 43.6%;">46</div>
-      <div class="plot" id="plot47" style="left: 47.2%; top: 39.9%;">47</div>
-      <div class="plot" id="plot48" style="left: 38.4%; top: 48.2%;">48</div>
-      <div class="plot" id="plot49" style="left: 46.9%; top: 46.4%;">49</div>
-      <div class="plot" id="plot50" style="left: 35.4%; top: 41.6%;">50</div>
-      <div class="plot" id="plot51" style="left: 44.6%; top: 39.6%;">51</div>
-      <div class="plot" id="plot52" style="left: 36.3%; top: 38.2%;">52</div>
-      <div class="plot" id="plot53" style="left: 39.7%; top: 49.9%;">53</div>
-      <div class="plot" id="plot54" style="left: 49.7%; top: 44.5%;">54</div>
+      <!-- PARCELLES 0 à 54 (coordonnées Horde en %) -->
+      <div class="plot" id="plot0"  style="left: 40.3%; top: 66.2%;">0</div>
+      <div class="plot" id="plot1"  style="left: 64.3%; top: 78.5%;">1</div>
+      <div class="plot" id="plot2"  style="left: 42.4%; top: 53.0%;">2</div>
+      <div class="plot" id="plot3"  style="left: 60.2%; top: 78.5%;">3</div>
+      <div class="plot" id="plot4"  style="left: 60.7%; top: 60.8%;">4</div>
+      <div class="plot" id="plot5"  style="left: 62.6%; top: 79.7%;">5</div>
+      <div class="plot" id="plot6"  style="left: 56.6%; top: 81.8%;">6</div>
+      <div class="plot" id="plot7"  style="left: 60.8%; top: 83.0%;">7</div>
+      <div class="plot" id="plot8"  style="left: 66.7%; top: 65.8%;">8</div>
+      <div class="plot" id="plot9"  style="left: 40.8%; top: 58.7%;">9</div>
+      <div class="plot" id="plot10"  style="left: 59.6%; top: 68.2%;">10</div>
+      <div class="plot" id="plot11"  style="left: 44.0%; top: 72.1%;">11</div>
+      <div class="plot" id="plot12"  style="left: 47.2%; top: 84.1%;">12</div>
+      <div class="plot" id="plot13"  style="left: 65.3%; top: 76.1%;">13</div>
+      <div class="plot" id="plot14"  style="left: 66.7%; top: 69.1%;">14</div>
+      <div class="plot" id="plot15"  style="left: 67.7%; top: 49.0%;">15</div>
+      <div class="plot" id="plot16"  style="left: 57.3%; top: 62.2%;">16</div>
+      <div class="plot" id="plot17"  style="left: 44.2%; top: 75.4%;">17</div>
+      <div class="plot" id="plot18"  style="left: 41.8%; top: 61.0%;">18</div>
+      <div class="plot" id="plot19"  style="left: 58.1%; top: 87.7%;">19</div>
+      <div class="plot" id="plot20"  style="left: 64.3%; top: 55.1%;">20</div>
+      <div class="plot" id="plot21"  style="left: 59.9%; top: 58.3%;">21</div>
+      <div class="plot" id="plot22"  style="left: 52.6%; top: 84.1%;">22</div>
+      <div class="plot" id="plot23"  style="left: 67.2%; top: 52.3%;">23</div>
+      <div class="plot" id="plot24"  style="left: 46.9%; top: 91.4%;">24</div>
+      <div class="plot" id="plot25"  style="left: 46.7%; top: 54.2%;">25</div>
+      <div class="plot" id="plot26"  style="left: 41.7%; top: 72.8%;">26</div>
+      <div class="plot" id="plot27"  style="left: 49.5%; top: 69.4%;">27</div>
+      <div class="plot" id="plot28"  style="left: 42.8%; top: 58.6%;">28</div>
+      <div class="plot" id="plot29"  style="left: 54.8%; top: 70.3%;">29</div>
+      <div class="plot" id="plot30"  style="left: 49.3%; top: 74.8%;">30</div>
+      <div class="plot" id="plot31"  style="left: 61.1%; top: 49.0%;">31</div>
+      <div class="plot" id="plot32"  style="left: 51.0%; top: 81.1%;">32</div>
+      <div class="plot" id="plot33"  style="left: 45.1%; top: 70.1%;">33</div>
+      <div class="plot" id="plot34"  style="left: 58.0%; top: 66.1%;">34</div>
+      <div class="plot" id="plot35"  style="left: 71.4%; top: 56.0%;">35</div>
+      <div class="plot" id="plot36"  style="left: 47.6%; top: 56.5%;">36</div>
+      <div class="plot" id="plot37"  style="left: 55.2%; top: 89.6%;">37</div>
+      <div class="plot" id="plot38"  style="left: 69.8%; top: 53.8%;">38</div>
+      <div class="plot" id="plot39"  style="left: 70.0%; top: 45.5%;">39</div>
+      <div class="plot" id="plot40"  style="left: 54.3%; top: 73.9%;">40</div>
+      <div class="plot" id="plot41"  style="left: 48.2%; top: 65.7%;">41</div>
+      <div class="plot" id="plot42"  style="left: 69.6%; top: 57.2%;">42</div>
+      <div class="plot" id="plot43"  style="left: 46.0%; top: 81.9%;">43</div>
+      <div class="plot" id="plot44"  style="left: 63.4%; top: 52.5%;">44</div>
+      <div class="plot" id="plot45"  style="left: 61.2%; top: 54.0%;">45</div>
+      <div class="plot" id="plot46"  style="left: 65.1%; top: 44.9%;">46</div>
+      <div class="plot" id="plot47"  style="left: 55.1%; top: 64.8%;">47</div>
+      <div class="plot" id="plot48"  style="left: 56.5%; top: 68.4%;">48</div>
+      <div class="plot" id="plot49"  style="left: 54.4%; top: 86.5%;">49</div>
+      <div class="plot" id="plot50"  style="left: 47.1%; top: 72.9%;">50</div>
+      <div class="plot" id="plot51"  style="left: 58.6%; top: 82.3%;">51</div>
+      <div class="plot" id="plot52"  style="left: 67.0%; top: 59.5%;">52</div>
+      <div class="plot" id="plot53"  style="left: 65.2%; top: 60.1%;">53</div>
+      <div class="plot" id="plot54"  style="left: 44.5%; top: 80.1%;">54</div>
 
-      <!-- MARKERS -->
+      <!-- MARKERS HORDE -->
       <div class="marker marker-portal"
-           style="left: 57.5%; top: 26.5%;"
-           data-title="Portail vers Hurlevent"
-           data-text="Téléportation vers Hurlevent"></div>
+           style="left: 53.9%; top: 49.4%;"
+           data-title="Portail vers Orgrimmar"
+           data-text="Téléportation vers Orgrimmar"></div>
 
       <div class="marker marker-flight"
-           style="left: 56.7%; top: 27.7%;"
+           style="left: 54.9%; top: 51.2%;"
            data-title="Maître de vol"
            data-text="Portail d'entrée"></div>
 
       <div class="marker marker-flight"
-           style="left: 51.2%; top: 39.5%;"
+           style="left: 53.7%; top: 59.8%;"
            data-title="Maître de vol"
-           data-text="Centre-ville"></div>
+           data-text="Les communs"></div>
 
       <div class="marker marker-flight"
-           style="left: 63.8%; top: 41.2%;"
+           style="left: 42.7%; top: 55.9%;"
            data-title="Maître de vol"
-           data-text="Crête de la Rochevoile"></div>
+           data-text="Havre de Totem-Runique nord"></div>
 
       <div class="marker marker-flight"
-           style="left: 56.4%; top: 58.1%;"
+           style="left: 47.8%; top: 70.1%;"
            data-title="Maître de vol"
-           data-text="Creux Bois-des-Brumes"></div>
+           data-text="Havre de Totem-Runique sud"></div>
 
       <div class="marker marker-flight"
-           style="left: 43.3%; top: 45.0%;"
+           style="left: 66.3%; top: 56.5%;"
            data-title="Maître de vol"
-           data-text="Petit Nid-de-l'Aigle"></div>
+           data-text="Hautes-Terres de la combe Épineuse"></div>
 
       <div class="marker marker-flight"
-           style="left: 34.6%; top: 34.3%;"
+           style="left: 59.2%; top: 72.1%;"
            data-title="Maître de vol"
-           data-text="Ferme de Mear"></div>
+           data-text="La Florépine"></div>
 
       <div class="marker marker-flight"
-           style="left: 32.2%; top: 45.8%;"
+           style="left: 68.1%; top: 75.7%;"
            data-title="Maître de vol"
-           data-text="Les Rives des confins"></div>
+           data-text="Hauts-fonds de Crocs-Salés est"></div>
 
       <div class="marker marker-flight"
-           style="left: 38.0%; top: 62.7%;"
+           style="left: 52.7%; top: 82.0%;"
            data-title="Maître de vol"
-           data-text="Chênes dorés"></div>
+           data-text="Les pitons"></div>
 
       <div class="legend-box">
         <div class="legend-header">Légende</div>
@@ -625,7 +615,7 @@
         <label class="legend-item">
           <input type="checkbox" id="toggle-portal" checked />
           <span class="legend-icon legend-portal"></span>
-          <span>Portail vers Hurlevent</span>
+          <span>Portail vers Orgrimmar</span>
         </label>
 
         <div class="legend-separator"></div>
@@ -638,7 +628,7 @@
       <!-- POPUP RECENSEMENT -->
       <div id="recensement-popup" class="recensement-popup">
         <div class="recensement-header">
-          <span class="recensement-title">📜 Recensement de l'enclave du Vent d'Or</span>
+          <span class="recensement-title">📜 Recensement du quartier des étoiles</span>
           <button class="recensement-close" id="recensement-close">X</button>
         </div>
         <div class="recensement-content">
@@ -662,13 +652,12 @@
           <p>
             <span class="gold">Recherche :</span><br>
             <input id="rec-search" type="text"
-                   placeholder="Nom, numéro #, métier, forgeron, mineur, pêcheur, côté RP..." />
+                   placeholder="Nom, numéro #, métier, forgeron, mineur, pêcheur..." />
           </p>
 
           <div class="recensement-tabs">
             <div class="rec-tab active" id="tab-residents">Résidents</div>
             <div class="rec-tab" id="tab-artisans">Artisans</div>
-            <div class="rec-tab" id="tab-rp">Côté RP</div>
           </div>
 
           <div id="rec-residents-content" class="rec-tab-content">
@@ -677,10 +666,6 @@
 
           <div id="rec-artisans-content" class="rec-tab-content" style="display:none;">
             <div id="rec-artisans-list"></div>
-          </div>
-
-          <div id="rec-rp-content" class="rec-tab-content" style="display:none;">
-            <div id="rec-rp-list"></div>
           </div>
         </div>
       </div>
@@ -741,18 +726,6 @@
         <select id="job5"></select>
       </div>
 
-      <!-- NOUVEAU : Côté RP -->
-      <div class="form-row">
-        <label for="owner-rp-short">Côté RP (court) :</label>
-        <input type="text" id="owner-rp-short" placeholder="Ex : Tavernier, Archiviste..." />
-      </div>
-
-      <div class="form-row">
-        <label for="owner-rp-long">Description RP :</label>
-        <textarea id="owner-rp-long" rows="3" cols="40"
-          placeholder="Texte RP détaillé : rôle, ambiance, anecdote..."></textarea>
-      </div>
-
       <div class="form-row">
         <label for="owner-note">Note interne :</label>
         <textarea id="owner-note" rows="2" cols="40"
@@ -796,12 +769,13 @@
       return hashHex;
     }
 
-    const ADMIN_HASH = "4983071bc71140bdb0f947ecaac585104672f1581b565397cf8519d244394a30";
-    const OWNERS_KEY = "logis_enclave_owners";
+    // Mot de passe Horde : "UnBLUEteStLoG2778"
+    const ADMIN_HASH = "f7b4bb78d3b199e9daea8db7f38d7301dcf5262a6cdc38737535bfc282a3d049";
+    const OWNERS_KEY = "logis_enclave_horde";
     const ADMIN_FLAG = "logis_enclave_admin";
     const DEED_BASE_SRC = "Acte_propriete_base.png";
 
-    const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbzRDHnqkKrXS8C-vJHk5yMzmJf9ApWYPFnxjDqMHScLkPGjCfQpTKKYACNHQy52L3ro/exec";
+    const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbyH6rWnXI9rywmN88XdRKF28fnpZ7zdo8XQyCL5iXBMmjkbhUOMUCMna1VhQpV3aQoKFg/exec";
 
     function loadJSON(key) {
       try {
@@ -875,7 +849,7 @@
         case "mine":           return "Minage";
         case "herboristerie":  return "Herboristerie";
         case "depecage":       return "Dépeçage";
-        case "archeologie":    return "Archéologie";   // ← nouveau métier
+        case "archeologie":    return "Archéologie";
         default:               return code;
       }
     }
@@ -894,7 +868,7 @@
       "mine":           "icone_mine.png",
       "herboristerie":  "icone_herboristerie.png",
       "depecage":       "icone_depecage.png",
-      "archeologie":    "icone_archeologie.png"       // ← icône Archéologie
+      "archeologie":    "icone_archeologie.png"
     };
 
     const JOB_SYNONYMS = {
@@ -925,55 +899,47 @@
       });
     }
 
-function showOwnerTooltipById(id, rect) {
-  const o = owners[id];
-  if (!o) {
-    tooltip.style.display = "none";
-    return;
-  }
-  const g = o.gender || "";
-  let t = "Résident·e";
-  if (g === "f") t = "Résidente";
-  if (g === "m") t = "Résident";
+    function showOwnerTooltipById(id, rect) {
+      const o = owners[id];
+      if (!o) {
+        tooltip.style.display = "none";
+        return;
+      }
+      const g = o.gender || "";
+      let t = "Résident·e";
+      if (g === "f") t = "Résidente";
+      if (g === "m") t = "Résident";
 
-  tooltipTitle.textContent = o.name;
+      tooltipTitle.textContent = o.name;
 
-  const lines = [];
+      const lines = [];
 
-  // Ligne "résident depuis"
-  lines.push(`${t} depuis le ${escapeHtml(o.since)}`);
+      // Ligne "résident depuis"
+      lines.push(`${t} depuis le ${escapeHtml(o.since)}`);
 
-  // Métiers
-  if (o.jobs && o.jobs.length > 0) {
-    const labels = o.jobs.map(j => getJobLabel(j, g)).filter(Boolean);
-    if (labels.length > 0) {
+      // Métiers
+      if (o.jobs && o.jobs.length > 0) {
+        const labels = o.jobs.map(j => getJobLabel(j, g)).filter(Boolean);
+        if (labels.length > 0) {
+          lines.push(
+            `<span class="tooltip-label">Métiers :</span> ` +
+            labels.map(escapeHtml).join(", ")
+          );
+        }
+      }
+
+      // Parcelle
       lines.push(
-        `<span class="tooltip-label">Métiers :</span> ` +
-        labels.map(escapeHtml).join(", ")
+        `<span class="tooltip-label">Parcelle :</span> #${id}`
       );
+
+      tooltipBody.innerHTML = lines.join("<br>");
+
+      tooltip.style.top  = (rect.top + window.scrollY - 10) + "px";
+      tooltip.style.left = (rect.left + window.scrollX + rect.width / 2) + "px";
+      tooltip.style.transform = "translate(-50%, -100%)";
+      tooltip.style.display = "block";
     }
-  }
-
-  // Côté RP
-  if (o.rpShort) {
-    lines.push(
-      `<span class="tooltip-label">Côté RP :</span> ` +
-      escapeHtml(o.rpShort)
-    );
-  }
-
-  // Parcelle
-  lines.push(
-    `<span class="tooltip-label">Parcelle :</span> #${id}`
-  );
-
-  tooltipBody.innerHTML = lines.join("<br>");
-
-  tooltip.style.top  = (rect.top + window.scrollY - 10) + "px";
-  tooltip.style.left = (rect.left + window.scrollX + rect.width / 2) + "px";
-  tooltip.style.transform = "translate(-50%, -100%)";
-  tooltip.style.display = "block";
-}
 
     document.querySelectorAll(".plot").forEach(plot => {
       const id = parseInt(plot.textContent, 10);
@@ -1089,10 +1055,8 @@ function showOwnerTooltipById(id, rect) {
     const recFilterJobSelect = document.getElementById("rec-filter-job");
     const tabResidents = document.getElementById("tab-residents");
     const tabArtisans  = document.getElementById("tab-artisans");
-    const tabRP        = document.getElementById("tab-rp");
     const recResidentsContent = document.getElementById("rec-residents-content");
     const recArtisansContent  = document.getElementById("rec-artisans-content");
-    const recRPContent        = document.getElementById("rec-rp-content");
 
     ["wheel", "mousedown"].forEach(evt => {
       recPopup.addEventListener(evt, (e) => {
@@ -1105,13 +1069,10 @@ function showOwnerTooltipById(id, rect) {
     function setRecTab(tab) {
       currentRecTab = tab;
 
-      // reset classes
       tabResidents.classList.remove("active");
       tabArtisans.classList.remove("active");
-      tabRP.classList.remove("active");
       recResidentsContent.style.display = "none";
       recArtisansContent.style.display  = "none";
-      recRPContent.style.display        = "none";
 
       if (tab === "residents") {
         tabResidents.classList.add("active");
@@ -1119,9 +1080,6 @@ function showOwnerTooltipById(id, rect) {
       } else if (tab === "artisans") {
         tabArtisans.classList.add("active");
         recArtisansContent.style.display = "block";
-      } else if (tab === "rp") {
-        tabRP.classList.add("active");
-        recRPContent.style.display = "block";
       }
     }
 
@@ -1131,14 +1089,10 @@ function showOwnerTooltipById(id, rect) {
     tabArtisans.addEventListener("click", () => {
       setRecTab("artisans");
     });
-    tabRP.addEventListener("click", () => {
-      setRecTab("rp");
-    });
 
     function updateRecensement() {
       const listDiv = document.getElementById("rec-list");
       const artisansDiv = document.getElementById("rec-artisans-list");
-      const rpListDiv = document.getElementById("rec-rp-list");
       const totalSpan = document.getElementById("rec-total");
       const avgSpan = document.getElementById("rec-average");
 
@@ -1157,9 +1111,7 @@ function showOwnerTooltipById(id, rect) {
           since: o.since,
           jobs: o.jobs || [],
           timestamp: o.timestamp || null,
-          note: o.note || "",
-          rpShort: o.rpShort || "",
-          rpLong: o.rpLong || ""
+          note: o.note || ""
         });
       }
 
@@ -1211,11 +1163,6 @@ function showOwnerTooltipById(id, rect) {
             if ((entry.jobs || []).includes(jobCode)) return true;
           }
         }
-
-        // NOUVEAU : recherche dans le RP
-        const rpS = (entry.rpShort || "").toLowerCase();
-        const rpL = (entry.rpLong || "").toLowerCase();
-        if (rpS.includes(q) || rpL.includes(q)) return true;
 
         return false;
       }
@@ -1356,85 +1303,6 @@ function showOwnerTooltipById(id, rect) {
         section.appendChild(namesDiv);
         artisansDiv.appendChild(section);
       });
-
-      // --- NOUVEL ONGLET : Côté RP ---
-      rpListDiv.innerHTML = "";
-
-      const rpEntries = residentsEntries.filter(e =>
-        (e.rpShort && e.rpShort.trim()) || (e.rpLong && e.rpLong.trim())
-      );
-
-      rpEntries.forEach(e => {
-        if (!matchesSearch(e)) return;
-
-        if (filterJob === "none") {
-          if (e.jobs && e.jobs.length) return;
-        } else if (filterJob) {
-          if (!(e.jobs || []).includes(filterJob)) return;
-        }
-
-        const div = document.createElement("div");
-        div.className = "recensement-list-entry";
-
-        const nameSpan = document.createElement("span");
-        nameSpan.className = "rp-name";
-        nameSpan.textContent = e.name;
-
-        const roleText = document.createElement("span");
-        const gLabel =
-          e.gender === "f" ? "Résidente" :
-          e.gender === "m" ? "Résident"  :
-                             "Résident·e";
-
-        if (e.rpShort) {
-          // RP court fourni → on l’affiche tel quel, sans "de l'enclave"
-          roleText.textContent = ", " + e.rpShort + ".";
-        } else {
-          // Pas de RP court → texte par défaut accordé en genre
-          roleText.textContent = ", " + gLabel + ".";
-        }
-
-        const br1 = document.createElement("br");
-
-        const desc = document.createElement("span");
-        desc.className = "rp-desc";
-        if (e.rpLong) {
-          desc.textContent = '"' + e.rpLong + '"';
-        } else {
-          desc.textContent = "";
-        }
-
-        const br2 = document.createElement("br");
-        const parcelle = document.createElement("span");
-        parcelle.textContent = "Parcelle : #" + e.id;
-
-        div.appendChild(nameSpan);
-        div.appendChild(roleText);
-        div.appendChild(br1);
-        if (e.rpLong) {
-          div.appendChild(desc);
-          div.appendChild(br2);
-        }
-        div.appendChild(parcelle);
-
-        // Survol du nom → tooltip
-        nameSpan.addEventListener("mouseenter", () => {
-          const rect = nameSpan.getBoundingClientRect();
-          showOwnerTooltipById(e.id, rect);
-        });
-        nameSpan.addEventListener("mouseleave", () => {
-          tooltip.style.display = "none";
-        });
-
-        // Clic sur l'entrée → focus sur la parcelle
-        div.addEventListener("click", () => {
-          recPopup.style.display = "none";
-          tooltip.style.display = "none";
-          focusOnPlot(e.id);
-        });
-
-        rpListDiv.appendChild(div);
-      });
     }
 
     if (recSortSelect) {
@@ -1478,8 +1346,6 @@ function showOwnerTooltipById(id, rect) {
     const job3         = document.getElementById("job3");
     const job4         = document.getElementById("job4");
     const job5         = document.getElementById("job5");
-    const rpShortInput = document.getElementById("owner-rp-short");
-    const rpLongInput  = document.getElementById("owner-rp-long");
     const noteInput    = document.getElementById("owner-note");
     const deleteBtn    = document.getElementById("delete-owner");
     const generateDeedBtn = document.getElementById("generate-deed");
@@ -1648,8 +1514,6 @@ function showOwnerTooltipById(id, rect) {
         job3.value = "";
         job4.value = "";
         job5.value = "";
-        rpShortInput.value = "";
-        rpLongInput.value = "";
         noteInput.value = "";
         refreshJobDropdowns();
         return;
@@ -1670,8 +1534,6 @@ function showOwnerTooltipById(id, rect) {
       job4.value = jobs[3] || "";
       job5.value = jobs[4] || "";
 
-      rpShortInput.value = o.rpShort || "";
-      rpLongInput.value  = o.rpLong || "";
       noteInput.value = o.note || "";
       refreshJobDropdowns();
     }
@@ -1721,8 +1583,6 @@ function showOwnerTooltipById(id, rect) {
       });
 
       const note = noteInput.value.trim();
-      const rpShort = rpShortInput.value.trim();
-      const rpLong  = rpLongInput.value.trim();
 
       owners[id] = {
         name,
@@ -1733,9 +1593,7 @@ function showOwnerTooltipById(id, rect) {
         month: monthIndex,
         year,
         jobs,
-        note,
-        rpShort,
-        rpLong
+        note
       };
 
       saveJSON(OWNERS_KEY, owners);
@@ -1914,7 +1772,7 @@ function showOwnerTooltipById(id, rect) {
         const now = new Date();
         const pad = n => String(n).padStart(2, "0");
         const fileName =
-          "enclave_logis_backup_" +
+          "quartier_etoiles_horde_backup_" +
           now.getFullYear() + "-" +
           pad(now.getMonth() + 1) + "-" +
           pad(now.getDate()) + "_" +
